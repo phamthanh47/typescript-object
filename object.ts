@@ -1,4 +1,4 @@
-import './scss/styles.scss';
+//import './scss/styles.scss';
 
 interface IUser {
   name: string;
@@ -12,6 +12,9 @@ let customer: IUser = {
 
 console.log(customer);
 
+for(const key in customer){
+  console.log(`${key}:${customer[key]}`);
+}
 /* customer = {
   name: 'Anna'
 }; */
